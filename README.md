@@ -1,8 +1,11 @@
 # vid-crop
+
 ## vid-crop main
 A command-line script to crop videos. In particular, this is for when someone films a landscape video in portrait mode and you need to crop into the actual video.
+
 ## cut
 A utility to obtain a given time duration cut of a video.
+
 
 ## Currently Supported Codecs
 ### Video
@@ -11,6 +14,7 @@ Note: I have only tested the scripts on `mp4` files. It may work with other vide
 ### Audio
 - `mp3`
 - `aac`
+
 
 ## Dependencies
 ### vid-crop
@@ -21,6 +25,7 @@ Note: I have only tested the scripts on `mp4` files. It may work with other vide
 ### cut
 - Python 3
   - `moviepy`
+
 
 ## How to Run
 ### vid-crop
@@ -36,3 +41,7 @@ On the command line:
 ```
 Again `./path/to/XXXX` is the relative path to entity `XXXX`. `YY` and `ZZ` are the start and end times (integer, in seconds) of the cut, respectively.
 Running `cut` on `mp4` files, it seems that the audio encoding is changed to `mp3`.
+
+
+## Other
+Ensure that there are no audio or video files named "temp" in the directory that you are running `vid-crop` in. These may be overwritten.
