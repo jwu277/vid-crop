@@ -1,8 +1,7 @@
+import argparse
+import imageio
 from tqdm import tqdm
 
-import argparse
-
-import imageio
 
 Y1 = 320
 Y2 = Y1 + 33 * 16
