@@ -12,7 +12,7 @@ def main():
 
     args = parser.parse_args()
 
-    VideoFileClip(args.in_fname).subclip(args.start_time, args.end_time).write_videofile(args.out_fname)
+    VideoFileClip(args.in_fname).subclip(args.start_time, args.end_time).write_videofile(args.out_fname, codec="mpeg4")
 
 
 if __name__ == "__main__":
